@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -59,11 +60,11 @@ public class RatingApp extends Fragment {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                temp = rateCount.getText().toString();
-                showRating.setText(temp + "\n" + "Feedback:" + "\n" + review.getText());
-                review.setText("");
-                ratingBar.setRating(0);
-                rateCount.setText("");
+                    temp = rateCount.getText().toString();
+                    showRating.setText(temp + "\n" + "Feedback:" + "\n" + review.getText());
+                    review.setText("");
+                    ratingBar.setRating(0);
+                    rateCount.setText("");
             }
         });
 

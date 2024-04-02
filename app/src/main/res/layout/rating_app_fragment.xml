@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:padding="30dp"
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -47,8 +48,6 @@
                 android:id="@+id/rateCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Awesome"
-                android:textColorHint="@color/black"
                 android:textSize="18dp"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
@@ -87,7 +86,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="30dp">
+            android:padding="30dp"
+            android:background="@color/white">
 
             <TextView
                 android:layout_width="wrap_content"
