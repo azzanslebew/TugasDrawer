@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backmain">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textColor="#FF6E40"
+                android:textSize="36dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yuk beri feedback dan rating untuk aplikasi ini"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14dp"/>
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/rateCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Awesome"
+                android:textColorHint="@color/black"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Write Feedback..."
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#FF6E40"
+                android:fontFamily="@font/poppins"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card1"
+        android:layout_centerHorizontal="true"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="12dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating Kamu"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textColor="#FF6E40"
+                android:textSize="36dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showRating"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
