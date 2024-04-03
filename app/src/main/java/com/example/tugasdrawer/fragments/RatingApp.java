@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -67,7 +66,6 @@ public class RatingApp extends Fragment {
                     rateCount.setText("");
             }
         });
-
         return view;
     }
 }
