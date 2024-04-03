@@ -33,12 +33,12 @@ public class MinumanKhas extends Fragment implements AdapterList.ItemClickListen
         recyclerView = view.findViewById(R.id.rvList2);
         dataList = new ArrayList<>();
 
-        dataList.add(new DataItem("Kopi Jetak", "4.9", R.drawable.kopi_jetak));
-        dataList.add(new DataItem("Es Dawet Durian", "5.0", R.drawable.esdawet_durian));
-        dataList.add(new DataItem("Wedang Blung", "4.9", R.drawable.wedang_blung));
-        dataList.add(new DataItem("Wedang Coro", "4.8", R.drawable.wedang_coro));
-        dataList.add(new DataItem("Wedang Pejuh", "4.9", R.drawable.wedang_pejuh));
-        dataList.add(new DataItem("Sekoteng", "5.0", R.drawable.sekoteng));
+        dataList.add(new DataItem("Kopi Jetak", "4.9", R.drawable.kopi_jetak, "Add to favourite"));
+        dataList.add(new DataItem("Es Dawet Durian", "5.0", R.drawable.esdawet_durian, "Add to favourite"));
+        dataList.add(new DataItem("Wedang Blung", "4.9", R.drawable.wedang_blung, "Add to favourite"));
+        dataList.add(new DataItem("Wedang Coro", "4.8", R.drawable.wedang_coro, "Add to favourite"));
+        dataList.add(new DataItem("Wedang Pejuh", "4.9", R.drawable.wedang_pejuh, "Add to favourite"));
+        dataList.add(new DataItem("Sekoteng", "5.0", R.drawable.sekoteng, "Add to favourite"));
 
         adapter = new AdapterList(dataList, getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,6 +40,7 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
         holder.textNama.setText(dataItem.getNama());
         holder.textRating.setText(dataItem.getRating());
         holder.imageGambar.setImageResource(dataItem.getGambar());
+        holder.button.setText(dataItem.getButton());
     }
 
     @Override
@@ -50,12 +52,14 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.ViewHolder> {
 
         TextView textNama, textRating;
         ImageView imageGambar;
+        Button button;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textNama = itemView.findViewById(R.id.textNama);
             textRating = itemView.findViewById(R.id.textRating);
             imageGambar = itemView.findViewById(R.id.gambar);
+            button = itemView.findViewById(R.id.button);
             itemView.setOnClickListener(this);
         }
 

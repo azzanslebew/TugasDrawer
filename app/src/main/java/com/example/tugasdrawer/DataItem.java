@@ -4,11 +4,13 @@ public class DataItem {
     String nama;
     String rating;
     int gambar;
+    String button;
 
-    public DataItem(String nama, String rating, int gambar) {
+    public DataItem(String nama, String rating, int gambar, String button) {
         this.nama = nama;
         this.rating = rating;
         this.gambar = gambar;
+        this.button = button;
     }
 
     public String getNama() {
@@ -33,6 +35,14 @@ public class DataItem {
 
     public void setGambar(int gambar) {
         this.gambar = gambar;
+    }
+
+    public String getButton() {
+        return button;
+    }
+
+    public void setButton(String button) {
+        this.button = button;
     }
 
 }
