@@ -73,14 +73,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="10dp"
-                android:paddingBottom="10dp">
+                android:paddingBottom="10dp"
+                android:background="@color/white">
 
                 <Button
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FF6E40"
-                    android:text="Add to favourite" />
+                    android:text="Add to favourite"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
         </LinearLayout>
